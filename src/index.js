@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './App';
-import DetailScreen from "./DetailScreen"
+import DetailScreen from "./pages/DetailSreen"
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="DetailScreen" element={<DetailScreen />} />
+      <Route path="/DetailScreen" element={<DetailScreen />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

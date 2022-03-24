@@ -1,0 +1,22 @@
+.navigation {
+    background-color: #cccccc;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation input {
+    padding: .6rem 1.2rem;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.navigation input:not(:last-of-type) {
+    margin-right: .5rem;
+}
+
+.user-card  {
+    color: #cccccc;
+}
+
