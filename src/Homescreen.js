@@ -21,6 +21,7 @@ const Homescreen = () => {
                 {value}
             </p>
 
+
         </div>
     )
 }
