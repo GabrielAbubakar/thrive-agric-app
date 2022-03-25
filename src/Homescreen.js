@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from "react-router-dom";
-import { Button } from '@mui/material';
+import { Button, TextField } from '@mui/material';
 import UserContext from './context/UserContext';
 
 
@@ -16,7 +16,7 @@ const Homescreen = () => {
                     DetailScreen
                 </Button>
             </Link> <br />
-            <input type="text" onChange={e => setValue(e.target.value)} />
+            <TextField id="filled-basic" label="Input Value" variant="filled" onChange={e => setValue(e.target.value)} />
             <p>
                 {value}
             </p>
