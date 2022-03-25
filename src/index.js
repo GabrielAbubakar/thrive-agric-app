@@ -5,14 +5,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './App';
 import DetailScreen from "./DetailScreen"
 import reportWebVitals from './reportWebVitals';
+import UserContext from './context/UserContext';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="DetailScreen" element={<DetailScreen />} />
-    </Routes>
-  </BrowserRouter>,
+
+  <App />,
   document.getElementById('root')
 );
 

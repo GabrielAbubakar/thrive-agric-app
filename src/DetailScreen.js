@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import UserContext from './context/UserContext'
 
 const DetailScreen = () => {
+
+    const { value, setValue } = useContext(UserContext)
+
     return (
         <div>
-            DetailsScreen
+            {/* {value} */}
+            DetailsScreen feeds {value}
         </div>
     )
 }
