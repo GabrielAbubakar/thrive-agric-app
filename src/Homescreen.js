@@ -12,14 +12,15 @@ const Homescreen = () => {
             <form onSubmit={(e) => {
                 e.preventDefault();
                 setValue(input)
-                console.log(value);
             }}>
                 <h1>Github Search App</h1>
-                <input type="text" placeholder='Input your search' onChange={e => setInput(e.target.value)} />
-                <p>
-                    {value}
-                </p>
+                <input type="text" placeholder='Input your search' onChange={e => setInput(e.target.value)} value={input} />
+                <input type="submit" value="submit" />
             </form>
+
+            <p>
+                {value}
+            </p>
         </div>
     )
 }

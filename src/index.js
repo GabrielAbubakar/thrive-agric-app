@@ -7,12 +7,7 @@ import DetailScreen from "./pages/DetailSreen"
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/DetailScreen" element={<DetailScreen />} />
-    </Routes>
-  </BrowserRouter>,
+  <App />,
   document.getElementById('root')
 );
 
